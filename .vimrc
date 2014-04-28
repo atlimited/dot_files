@@ -21,7 +21,7 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'romanvbabenko/rails.vim'
-
+NeoBundle 'Shougo/neocomplcache'
 " You can specify revision/branch/tag.
 NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
 
@@ -40,3 +40,5 @@ autocmd User Rails.controller*           NeoSnippetSource ~/.vim/snippet/ruby.ra
 autocmd User Rails/db/migrate/*          NeoSnippetSource ~/.vim/snippet/ruby.rails.migrate.snip
 autocmd User Rails/config/routes.rb      NeoSnippetSource ~/.vim/snippet/ruby.rails.route.snip
 
+"let g:neocomplcache
+let g:neocomplcache_enable_at_startup = 1
