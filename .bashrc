@@ -23,11 +23,5 @@ else
     ln -sf ~/dot_files/.vimrc ~/.vimrc
 fi
 
-if [ -e ~/.vim ]; then
-    echo "exist .vim"
-else
-    echo "create .vim"
-    ln -sf ~/dot_files/.vim ~/.vim
-fi
 
 
