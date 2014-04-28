@@ -16,3 +16,18 @@ PATH=$PATH:/Users/takagi/my_scripts
 #export $PATH
 
 #sshfs -p 22666 takagi@130.54.51.3:/home/takagi mnt/fold/
+if [ -e ~/.vimrc ]; then
+    echo "exist .vimrc"
+else
+    echo "create .vimrc"
+    ln -sf ~/dot_files/.vimrc ~/.vimrc
+fi
+
+if [ -e ~/.vim ]; then
+    echo "exist .vim"
+else
+    echo "create .vim"
+    ln -sf ~/dot_files/.vim ~/.vim
+fi
+
+
