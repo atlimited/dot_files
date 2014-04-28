@@ -1,23 +1,32 @@
-set nocompatible               " be iMproved
-filetype off
+ if has('vim_starting')
+   set nocompatible               " Be iMproved
 
+   " Required:
+   set runtimepath+=~/.vim/bundle/neobundle.vim/
+ endif
 
-if has('vim_starting')
-  set runtimepath+=~/.vim/bundle/neobundle.vim
-  call neobundle#rc(expand('~/.vim/bundle/'))
-endif
-" originalrepos on github
-NeoBundle 'Shougo/neobundle.vim'
-NeoBundle 'Shougo/vimproc'
-NeoBundle 'VimClojure'
-NeoBundle 'Shougo/vimshell'
-NeoBundle 'Shougo/unite.vim'
-NeoBundle 'Shougo/neocomplcache'
-NeoBundle 'Shougo/neosnippet'
-NeoBundle 'jpalardy/vim-slime'
-NeoBundle 'scrooloose/syntastic'
-""NeoBundle 'https://bitbucket.org/kovisoft/slimv'
+ " Required:
+ call neobundle#begin(expand('~/.vim/bundle/'))
 
-filetype plugin indent on     " required!
-filetype indent on
-syntax on
+ " Let NeoBundle manage NeoBundle
+ " Required:
+ NeoBundleFetch 'Shougo/neobundle.vim'
+
+ " My Bundles here:
+ NeoBundle 'Shougo/neosnippet.vim'
+ NeoBundle 'Shougo/neosnippet-snippets'
+ NeoBundle 'tpope/vim-fugitive'
+ NeoBundle 'kien/ctrlp.vim'
+ NeoBundle 'flazz/vim-colorschemes'
+
+ " You can specify revision/branch/tag.
+ NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
+
+ call neobundle#end()
+
+ " Required:
+ filetype plugin indent on
+
+ " If there are uninstalled bundles found on startup,
+ " this will conveniently prompt you to install them.
+ NeoBundleCheck
