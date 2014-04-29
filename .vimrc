@@ -41,4 +41,4 @@ autocmd User Rails/db/migrate/*          NeoSnippetSource ~/.vim/snippet/ruby.ra
 autocmd User Rails/config/routes.rb      NeoSnippetSource ~/.vim/snippet/ruby.rails.route.snip
 
 "let g:neocomplcache
-let g:neocomplcache_enable_at_startup = 1
+let g:neocomplete_enable_at_startup = 1
