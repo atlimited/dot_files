@@ -5,6 +5,7 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 export LANG=ja_JP.UTF-8
 
 alias grep='grep --color'
+alias vi='vim'
 alias vmd='/Applications/VMD\ 1.9.1.app/Contents/MacOS/startup.command'
 
 function vmdd(){
