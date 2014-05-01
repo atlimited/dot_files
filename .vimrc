@@ -43,4 +43,7 @@ autocmd User Rails/config/routes.rb      NeoSnippetSource ~/.vim/snippet/ruby.ra
 "let g:neocomplete
 let g:neocomplete#enable_at_startup = 1
 
-g:neocomplete#force_overwrite_completefunc = 1
+let g:neocomplete#force_overwrite_completefunc = 1
+
+set backspace=indent,eol,start
+set list
