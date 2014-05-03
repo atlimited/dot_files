@@ -3,7 +3,7 @@ imap <C-j> <ESC>
 inoremap { {}<LEFT>
 inoremap [ []<LEFT>
 inoremap ( ()<LEFT>
-inoremap < <><LEFT>
+inoremap <% <%%><LEFT>
 inoremap " ""<LEFT>
 inoremap ' ''<LEFT>
 
