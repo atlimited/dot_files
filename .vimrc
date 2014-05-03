@@ -1,4 +1,12 @@
 imap <C-j> <ESC>
+
+inoremap { {}<LEFT>
+inoremap [ []<LEFT>
+inoremap ( ()<LEFT>
+inoremap < <><LEFT>
+inoremap " ""<LEFT>
+inoremap ' ''<LEFT>
+
 :syntax on
 if has('vim_starting')
   set nocompatible               " Be iMproved
