@@ -8,6 +8,10 @@ inoremap " ""<LEFT>
 inoremap ' ''<LEFT>
 
 :syntax on
+:set number
+:set cursorline
+:set cursorcolumn
+
 if has('vim_starting')
   set nocompatible               " Be iMproved
 
