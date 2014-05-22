@@ -22,7 +22,7 @@ if [ -e ~/.vimrc ]; then
 else
     echo "create .vimrc"
     ln -sf ~/dot_files/.vimrc ~/.vimrc
-    git clone https://github.com/Shougo/neobundle.vim ~/.vim/neobundle.vim.git
+    git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 fi
 
 
