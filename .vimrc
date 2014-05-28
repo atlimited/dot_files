@@ -1,11 +1,12 @@
 imap <C-j> <ESC>
 
-inoremap { {}<LEFT>
-inoremap [ []<LEFT>
-inoremap ( ()<LEFT>
-inoremap < <><LEFT>
-inoremap " ""<LEFT>
-inoremap ' ''<LEFT>
+set backspace=indent,eol,start
+"inoremap { {}<LEFT>
+"inoremap [ []<LEFT>
+"inoremap ( ()<LEFT>
+"inoremap < <><LEFT>
+"inoremap " ""<LEFT>
+"inoremap ' ''<LEFT>
 
 :syntax on
 :set number
@@ -58,4 +59,4 @@ let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#force_overwrite_completefunc = 1
 
 "set backspace=indent,eol,start
-set list
+"set list
