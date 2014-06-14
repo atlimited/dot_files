@@ -16,6 +16,7 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 
 alias grep='grep --color'
 alias vi='vim'
+alias burp='java -jar -Dfile.encoding=UTF-8 ~/for_java/burpsuite_free_v1.6.jar'
 alias vmd='/Applications/VMD\ 1.9.1.app/Contents/MacOS/startup.command'
 
 function vmdd(){
