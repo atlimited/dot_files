@@ -11,7 +11,9 @@ set backspace=indent,eol,start
 :syntax on
 :set number
 :set cursorline
+:set tabstop=2
 ":set cursorcolumn
+
 
 "if has('vim_starting')
 "  set nocompatible               " Be iMproved
